@@ -51,6 +51,9 @@ declare -r OUTPUT_DIR="${OUTPUT_DIR:-"${PWD}/_output/${PACKAGE_TYPE}"}"
 
 case "${PACKAGE_TYPE}" in
 "debs")
+  RELEASE_ROOT="$(dirname "${BASH_SOURCE[0]}")/.."
+  cp "${RELEASE_ROOT}/go.mod" "${RELEASE_ROOT}/build/debs"
+  cp "${RELEASE_ROOT}/go.sum" "${RELEASE_ROOT}/build/debs"
   declare -r IMG_NAME="deb-builder:${BUILD_TAG}"
 ;;
 "rpms")
