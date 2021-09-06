@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	cloud.google.com/go/containeranalysis v0.1.0
-	cloud.google.com/go/storage v1.12.0
+	cloud.google.com/go/storage v1.16.1
 	github.com/GoogleCloudPlatform/testgrid v0.0.38
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/cheggaaa/pb/v3 v3.0.8
@@ -37,7 +37,7 @@ require (
 	golang.org/x/tools v0.1.5
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
 	google.golang.org/api v0.54.0
-	google.golang.org/genproto v0.0.0-20210813162853-db860fec028c
+	google.golang.org/genproto v0.0.0-20210825212027-de86158e7fda
 	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/utils v0.0.0-20210305010621-2afb4311ab10
 	sigs.k8s.io/k8s-container-image-promoter v1.337.0
@@ -49,7 +49,8 @@ require (
 )
 
 require (
-	cloud.google.com/go v0.92.1 // indirect
+	cloud.google.com/go v0.93.3 // indirect
+	cloud.google.com/go/grafeas v0.1.0 // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
 	github.com/BurntSushi/toml v0.3.1 // indirect
 	github.com/Microsoft/go-winio v0.5.0 // indirect
@@ -109,7 +110,7 @@ require (
 	golang.org/x/text v0.3.6 // indirect
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/grpc v1.39.1 // indirect
+	google.golang.org/grpc v1.40.0 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/src-d/go-billy.v4 v4.3.2 // indirect
 	gopkg.in/src-d/go-git.v4 v4.13.1 // indirect
