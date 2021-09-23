@@ -34,8 +34,8 @@ require (
 	golang.org/x/mod v0.5.1
 	golang.org/x/net v0.0.0-20210805182204-aaa1db679c0d
 	golang.org/x/tools v0.1.6
-	google.golang.org/api v0.56.0
-	google.golang.org/genproto v0.0.0-20210828152312-66f60bf46e71
+	google.golang.org/api v0.57.0
+	google.golang.org/genproto v0.0.0-20210903162649-d08c68adba83
 	gopkg.in/yaml.v2 v2.4.0
 	sigs.k8s.io/mdtoc v1.0.1
 	sigs.k8s.io/promo-tools/v3 v3.2.1
@@ -46,7 +46,7 @@ require (
 )
 
 require (
-	cloud.google.com/go v0.93.3 // indirect
+	cloud.google.com/go v0.94.1 // indirect
 	cloud.google.com/go/grafeas v0.0.0-20210817223811-71387f0142a4 // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
 	github.com/BurntSushi/toml v0.3.1 // indirect
@@ -104,7 +104,7 @@ require (
 	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e // indirect
 	golang.org/x/oauth2 v0.0.0-20210819190943-2bc19b11175f // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20210823070655-63515b42dcdf // indirect
+	golang.org/x/sys v0.0.0-20210908233432-aa78b53d3365 // indirect
 	golang.org/x/text v0.3.6 // indirect
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
