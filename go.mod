@@ -30,7 +30,7 @@ require (
 	github.com/stretchr/testify v1.7.0
 	github.com/yuin/goldmark v1.4.4
 	golang.org/x/net v0.0.0-20211118161319-6a13c67c3ce4
-	google.golang.org/api v0.62.0
+	google.golang.org/api v0.63.0
 	gopkg.in/yaml.v2 v2.4.0
 	sigs.k8s.io/bom v0.1.0
 	sigs.k8s.io/mdtoc v1.1.0
@@ -120,7 +120,7 @@ require (
 	github.com/vbatts/tar-split v0.11.2 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	golang.org/x/mod v0.5.1 // indirect
-	golang.org/x/sys v0.0.0-20211205182925-97ca703d548d // indirect
+	golang.org/x/sys v0.0.0-20211210111614-af8b64212486 // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/tools v0.1.7 // indirect
 	google.golang.org/genproto v0.0.0-20211208223120-3a66f561d7aa // indirect
