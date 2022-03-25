@@ -33,9 +33,9 @@ require (
 	github.com/tj/go-spin v1.1.0
 	github.com/yuin/goldmark v1.4.11
 	golang.org/x/net v0.0.0-20220225172249-27dd8689420f
-	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8
+	golang.org/x/oauth2 v0.0.0-20220309155454-6242fa91716a
 	golang.org/x/text v0.3.7
-	google.golang.org/api v0.66.0
+	google.golang.org/api v0.73.0
 	gopkg.in/yaml.v2 v2.4.0
 	sigs.k8s.io/bom v0.1.1-0.20211228172218-5dc67098b61b
 	sigs.k8s.io/mdtoc v1.1.0
@@ -49,7 +49,7 @@ require (
 require (
 	bitbucket.org/creachadair/shell v0.0.6 // indirect
 	cloud.google.com/go v0.100.2 // indirect
-	cloud.google.com/go/compute v1.1.0 // indirect
+	cloud.google.com/go/compute v1.5.0 // indirect
 	cloud.google.com/go/iam v0.1.1 // indirect
 	cloud.google.com/go/kms v1.1.0 // indirect
 	cuelang.org/go v0.4.1 // indirect
@@ -306,8 +306,8 @@ require (
 	golang.org/x/tools v0.1.10 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20220118154757-00ab72f36ad5 // indirect
-	google.golang.org/grpc v1.43.0 // indirect
+	google.golang.org/genproto v0.0.0-20220310185008-1973136f34c6 // indirect
+	google.golang.org/grpc v1.45.0 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/cheggaaa/pb.v1 v1.0.28 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
