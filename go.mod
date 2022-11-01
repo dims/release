@@ -34,7 +34,7 @@ require (
 	golang.org/x/net v0.1.0
 	golang.org/x/oauth2 v0.1.0
 	golang.org/x/text v0.4.0
-	google.golang.org/api v0.100.0
+	google.golang.org/api v0.101.0
 	gopkg.in/yaml.v2 v2.4.0
 	sigs.k8s.io/bom v0.4.1-0.20221030162443-eaf47e5a8d36
 	sigs.k8s.io/mdtoc v1.1.0
@@ -303,7 +303,7 @@ require (
 	golang.org/x/tools v0.2.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20221014213838-99cd37c6964a // indirect
+	google.golang.org/genproto v0.0.0-20221018160656-63c7b68cfc55 // indirect
 	google.golang.org/grpc v1.50.1 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/cheggaaa/pb.v1 v1.0.28 // indirect
