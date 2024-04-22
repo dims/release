@@ -24,7 +24,7 @@ jobs:
           disable-sudo: true
           egress-policy: audit
 
-      - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v3.5.2
+      - uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v3.5.2
         with:
           fetch-depth: 1
 
@@ -35,7 +35,7 @@ jobs:
           go-version: '1.22'
           check-latest: true
 
-      - uses: sigstore/cosign-installer@e1523de7571e31dbe865fd2e80c5c7c23ae71eb4 # v3.4.0
+      - uses: sigstore/cosign-installer@59acb6260d9c0ba8f4a2f9d9b48431a222b68e20 # v3.5.0
 
       - name: Install bom
         uses: kubernetes-sigs/release-actions/setup-bom@841d76a188a7c121231a863572e27012805715a2 # v0.1.4
@@ -48,7 +48,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
+      - uses: actions/upload-artifact@1746f4ab65b179e0ea60a494b83293b640dd5bba # v4.3.2
         with:
           name: artifacts
           path: dist/*
@@ -71,7 +71,7 @@ jobs:
           egress-policy: audit
 
       - name: Check out code onto GOPATH
-        uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
+        uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v4.1.3
         with:
           fetch-depth: 1
 
