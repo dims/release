@@ -14,7 +14,18 @@
 
 ARG GO_VERSION
 ARG OS_CODENAME
-FROM golang:${GO_VERSION}-${OS_CODENAME} as builder
+
+# Get Go from official Alpine image
+FROM golang:${GO_VERSION}-alpine as go-source
+
+FROM debian:${OS_CODENAME}-slim
+
+# Copy Go installation from official image
+COPY --from=go-source /usr/local/go /usr/local/go
+
+# Set up Go environment
+ENV PATH=/usr/local/go/bin:$PATH
+ENV GOROOT=/usr/local/go
 
 RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | \
     tee -a /etc/apt/sources.list.d/google-cloud-sdk.list

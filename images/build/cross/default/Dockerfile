@@ -16,12 +16,23 @@
 # platform go binary for the architecture kubernetes cares about.
 
 ARG BASEIMAGE
-FROM ${BASEIMAGE}
 
 ##------------------------------------------------------------
 # global ARGs & ENVs
 ARG TARGETPLATFORM
 ARG DEBIAN_FRONTEND=noninteractive
+
+ARG GO_VERSION
+FROM golang:${GO_VERSION}-alpine as go-source
+
+FROM ${BASEIMAGE}
+
+# Copy Go installation from official image
+COPY --from=go-source /usr/local/go /usr/local/go
+
+# Set up Go environment
+ENV PATH=/usr/local/go/bin:$PATH
+ENV GOROOT=/usr/local/go
 
 ENV GOARM 7
 ENV KUBE_DYNAMIC_CROSSPLATFORMS \

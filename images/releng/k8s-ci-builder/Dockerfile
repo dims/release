@@ -17,7 +17,15 @@ ARG OS_CODENAME
 
 # The Release Tooling can be compiled with a different version of Go than the
 # the Go version used in the kubernetes/kubernetes active development branch.
-FROM golang:${GO_VERSION_TOOLING}-${OS_CODENAME} AS builder
+FROM golang:${GO_VERSION_TOOLING}-alpine as go-source
+FROM debian:${OS_CODENAME}-slim AS builder
+
+# Copy Go installation from official image
+COPY --from=go-source /usr/local/go /usr/local/go
+
+# Set up Go environment
+ENV PATH=/usr/local/go/bin:$PATH
+ENV GOROOT=/usr/local/go
 
 WORKDIR /go/src/k8s.io/release
 
